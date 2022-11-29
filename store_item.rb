@@ -11,10 +11,14 @@
 # p item3
 
 class StoreItem
-  def initialize(add_name, add_color, add_price)
-    @name = add_name
-    @color = add_color
-    @price = add_price
+
+  attr_reader :name, :color, :price
+  attr_writer :name, :color, :price
+
+  def initialize(input_tool)
+    @name = input_tool[:name]
+    @color = input_tool[:color]
+    @price = input_tool[:price]
   end
 
   def name
@@ -39,8 +43,14 @@ class StoreItem
 
 end
 
-p item1 = StoreItem.new("wrench", "silver", 7.00)
+p item1 = StoreItem.new(name: "wrench", color: "silver", price: 7.00)
 
 p item1.change_color=("brown")
 p item1.change_price=(10.0)
-p item1
+p item1.name
+p item1.color
+p item1.price
+
+# this is a test
+
+#this is also a test
