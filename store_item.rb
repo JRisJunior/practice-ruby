@@ -42,3 +42,5 @@ end
 p item1 = StoreItem.new("wrench", "silver", 7.00)
 
 p item1.change_color=("brown")
+p item1.change_price=(10.0)
+p item1
