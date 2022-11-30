@@ -41,19 +41,17 @@ class Manager < Employee
   end
 
   def give_all_raises
-    @employees.each do |i|
-      i.give_annual_raise
+    @employees.each do |employee|
+      employee.give_annual_raise
     end
   end
 
   def fire_all_employees
-    @employees.each do |i|
-      i.active = false
+    @employees.each do |employee|
+      employee.active = false
     end
   end
   
-
-
 end
 
 manager = Manager.new(first_name: "Saron", last_name: "Yitbarek", salary: 100000, active: true, employees: [employee1, employee2])
