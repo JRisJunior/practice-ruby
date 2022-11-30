@@ -16,6 +16,8 @@ class Car
     @direction = new_direction
   end
 
+  private
+
   def honk_horn
     puts "Beeeeeeep!"
   end
@@ -30,4 +32,9 @@ end
 
 car1 = Car.new
 bike1 = Bike.new
-car1
+p car1
+p bike1
+p car1.accelerate
+p bike1.accelerate
+p car1.honk_horn
+# p bike1.honk_horn
