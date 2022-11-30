@@ -41,7 +41,17 @@ class Manager < Employee
   end
 
   def give_all_raises
+    @employees.each do |i|
+      i.give_annual_raise
+    end
   end
+
+  def fire_all_employees
+    @employees.each do |i|
+      i.active = false
+    end
+  end
+  
 
 
 end
@@ -51,3 +61,11 @@ manager.print_info
 manager.send_report
 manager.employees
 
+p employee1
+p employee2
+manager.give_all_raises
+p employee1
+p employee2
+manager.fire_all_employees
+p employee1
+p employee2
