@@ -1,7 +1,7 @@
-include "./reportable.rb"
-include "./employee.rb"
-include "./manager.rb"
-include "./intern.rb"
+require './reportable.rb'
+require './employee.rb'
+require './manager.rb'
+require './intern.rb'
 
 employee1 = Employee.new({:first_name => "Majora", :last_name => "Carter", :salary => 80000, :active => true})
 employee1.print_info
