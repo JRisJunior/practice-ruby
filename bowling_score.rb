@@ -19,14 +19,30 @@
 
 class Bowling
 
-  att_accessor: 
 
 
   def roll
+    puts "How many pins were knocked down?"
+    pins = gets.chomp
+    if pins == 10
+      puts "Was this on try 1 or try 2?"
+      try = gets.chomp
+      if try == 1
+        puts "That's a strike!"
+      elsif try == 2
+        puts "That's a spare!"
+      else
+        puts "I didn't get that, please re-enter your score!"
+      end
+
+    end
+
 
   end
 
   def score
+    puts "Here is your score!"
+
 
   end
 
@@ -37,6 +53,17 @@ class Bowling
 
 end
 
+play = Bowling.new
+p play
 
-game = {frame1: [],
-  frame1: [], frame1: [], frame1: [], frame1: [], frame1: [], frame1: [], frame1: [], frame1: [], frame1: [] }
+
+# game = {frame1: [],
+#   frame2: [],
+#   frame3: [],
+#   frame4: [],
+#   frame5: [],
+#   frame6: [],
+#   frame7: [],
+#   frame8: [],
+#   frame9: [],
+#   frame10: []}
