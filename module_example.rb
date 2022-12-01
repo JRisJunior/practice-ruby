@@ -1,7 +1,10 @@
 module Ringable
+
   def ring_bell
     puts "Ring ring!"
   end
+
+end
 
 class Car
   def initialize
@@ -24,11 +27,12 @@ class Car
   def honk_horn
     puts "Beeeeeeep!"
   end
+
 end
 
 class Bike
   include Ringable
-  
+
   def initialize
     @speed = 0
     @direction = 'north'
@@ -48,3 +52,13 @@ class Bike
 
 
 end
+
+
+car1 = Car.new
+bike1 = Bike.new
+p car1
+p bike1
+p car1.accelerate
+p bike1.accelerate
+# p car1.honk_horn
+# p bike1.ring_bell
