@@ -60,5 +60,5 @@ p car1
 p bike1
 p car1.accelerate
 p bike1.accelerate
-# p car1.honk_horn
-# p bike1.ring_bell
+car1.honk_horn
+bike1.ring_bell
