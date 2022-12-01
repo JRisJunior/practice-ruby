@@ -23,10 +23,10 @@ class Bowling
 
   def roll
     puts "How many pins were knocked down?"
-    pins = gets.chomp
+    pins = gets.chomp.to_i
     if pins == 10
       puts "Was this on try 1 or try 2?"
-      try = gets.chomp
+      try = gets.chomp.to_i
       if try == 1
         puts "That's a strike!"
       elsif try == 2
@@ -54,7 +54,12 @@ class Bowling
 end
 
 play = Bowling.new
-p play
+
+
+
+
+# play.roll
+# play.score
 
 
 # game = {frame1: [],
