@@ -34,6 +34,7 @@ class Bowling
       else
         puts "I didn't get that, please re-enter your score!"
       end
+    
 
     end
 
